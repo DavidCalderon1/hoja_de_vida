@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2 - flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin:0;
+            font-family: Arial,Helvetica;
+        }
+        
+        header{
+            padding: 20px;
+            text-align: center;
+            background-color: cornflowerblue;
+            color: white;
+            
+        }
+
+        header h1,header h3 {
+            text-shadow: 1px 1px black
+        }
+        
+        img:not(.profile-img){
+            height: 50px;
+        }
+        
+        nav{
+            background-color: gray;
+        }
+        
+        nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            border-left: 1px solid rgb(70, 70, 70)
+        }
+        
+        nav a:hover{
+            background-color: cornflowerblue;
+            /* color:black; */
+        }
+        
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        aside{
+            flex:30%;
+            background-color: #f0edc3;
+            padding: 20px;
+        }
+
+        main{
+            flex:70%;
+            background-color: white;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1> <b>D</b>avid <b>L</b>eonardo <b>C</b>alderon <b>C</b>ristancho</h1>
+        <h3><b>T</b>ecnólogo en <b>S</b>istemas</h3>
+        <section>
+            <a href="#1">Red social 1</a>
+            <a href="#2">Red social 2</a>
+            <a href="#3">Red social 3</a>
+        </section>
+    </header>
+    <nav class="navbar">
+        <a href="#1">Enlace 1</a>
+        <a href="#2">Enlace 2</a>
+        <a href="#3">Enlace 3</a>
+        <a href="#4">Enlace 4</a>
+        <a href="#5">Enlace 5</a>
+    </nav>
+    <div class="row">
+        <aside>
+            <article class="about-me">
+                <h2>Acerca de mi</h2>
+                <img class="profile-img" src="img/perfil.png" alt="img/profile.png">
+                <p>
+                    <h6>Info 1</h6>
+                    <h6>Info 2</h6>
+                    <h6>Info 3</h6>
+                </p>
+            </article>
+            <article class="contact">
+                <h2>Contacto</h2>
+                <p>
+                    <h6>Info 1</h6>
+                    <h6>Info 2</h6>
+                    <h6>Info 3</h6>
+                </p>
+            </article>
+            <article class="skills">
+                <h2>Habilidades</h2>
+                <p>
+                    <h6>Grafica Info 1</h6>
+                    <h6>Grafica Info 2</h6>
+                    <h6>Grafica Info 3</h6>
+                </p>
+            </article>
+            
+        </aside>
+        <main class="row">
+            <section id="profile">
+                <h2>Perfil</h2>
+                <h5>Descripción perfil</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+            </section>
+            <section id="experiences">
+                <h2>Experiencia Profesional</h2>
+                <article class="experience">
+                    <h5>Nombre empresa</h5>
+                    <img class="experience-img" src="img/perfil.png" alt="img/profile.png">
+                    
+                    <p class="name-experience">Nombre cargo.</p>
+                    <p class="duration-experience">Duración cargo.</p>
+                    <p class="desc-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="achievement-experience">
+                        <h5>Logros</h5>
+                        <ul class="achievements">
+                            <li>logro 1</li>
+                            <li>logro 2</li>
+                            <li>logro 3</li>
+                        </ul>
+                    </p>
+                    <p class="contact-experience">
+                        <a href="">Dirección</a>
+                        <a href="">Teléfono</a>
+                        <span>Nombre jefe inmediato</span>
+                    </p>
+                    
+                </article>
+                <article class="experience">
+                    <h5>Nombre empresa</h5>
+                    <img class="experience-img" src="img/perfil.png" alt="img/profile.png">
+                    
+                    <p class="name-experience">Nombre cargo.</p>
+                    <p class="duration-experience">Duración cargo.</p>
+                    <p class="desc-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="achievement-experience">
+                        <h5>Logros</h5>
+                        <ul class="achievements">
+                            <li>logro 1</li>
+                            <li>logro 2</li>
+                            <li>logro 3</li>
+                        </ul>
+                    </p>
+                    <p class="contact-experience">
+                        <a href="">Dirección</a>
+                        <a href="">Teléfono</a>
+                        <span>Nombre jefe inmediato</span>
+                    </p>
+                    
+                </article>
+                <article class="experience">
+                    <h5>Nombre empresa</h5>
+                    <img class="experience-img" src="img/perfil.png" alt="img/profile.png">
+                    
+                    <p class="name-experience">Nombre cargo.</p>
+                    <p class="duration-experience">Duración cargo.</p>
+                    <p class="desc-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="achievement-experience">
+                        <h5>Logros</h5>
+                        <ul class="achievements">
+                            <li>logro 1</li>
+                            <li>logro 2</li>
+                            <li>logro 3</li>
+                        </ul>
+                    </p>
+                    <p class="contact-experience">
+                        <a href="">Dirección</a>
+                        <a href="">Teléfono</a>
+                        <span>Nombre jefe inmediato</span>
+                    </p>
+                    
+                </article>
+                <article class="experience">
+                    <h5>Nombre empresa</h5>
+                    <img class="experience-img" src="img/perfil.png" alt="Logo empresa">
+                    
+                    <p class="name-experience">Nombre cargo.</p>
+                    <p class="duration-experience">Duración cargo.</p>
+                    <p class="desc-experience">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="achievement-experience">
+                        <h5>Logros</h5>
+                        <ul class="achievements">
+                            <li>logro 1</li>
+                            <li>logro 2</li>
+                            <li>logro 3</li>
+                        </ul>
+                    </p>
+                    <p class="contact-experience">
+                        <a href="">Dirección</a>
+                        <a href="">Teléfono</a>
+                        <span>Nombre jefe inmediato</span>
+                    </p>
+                    
+                </article>
+            </section>
+            <section id="education">
+                <h2>Educación</h2>
+                
+                <article class="title-education">
+                    <h5>Nombre titulo</h5>
+                    <img class="education-img" src="img/perfil.png" alt="Logo Institucion">
+                    
+                    <p class="name-education">Nombre institucion.</p>
+                    <p class="date-education">Fecha grado</p>
+                    <p class="contact-education">
+                        <a href="">pag web</a>
+                        <a href="">Teléfono</a>
+                    </p>
+                </article>
+                
+                <article class="title-education">
+                    <h5>Nombre titulo</h5>
+                    <img class="education-img" src="img/perfil.png" alt="Logo Institucion">
+                    
+                    <p class="name-education">Nombre institucion.</p>
+                    <p class="date-education">Fecha grado</p>
+                    <p class="contact-education">
+                        <a href="">pag web</a>
+                        <a href="">Teléfono</a>
+                    </p>
+                </article>
+                
+            </section>
+            <section class="education complement-education">
+                <h2>Formación Complementaria</h2>
+                <article class="title-education">
+                    <h5>Nombre titulo</h5>
+                    <img class="education-img" src="img/perfil.png" alt="Logo Institucion">
+                    
+                    <p class="desc-education">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="name-education">Nombre institucion.</p>
+                    <p class="date-education">Fecha grado</p>
+                    <p class="contact-education">
+                        <a href="">pag web</a>
+                        <a href="">Teléfono</a>
+                    </p>
+                </article>
+                <article class="title-education">
+                    <h5>Nombre titulo</h5>
+                    <img class="education-img" src="img/perfil.png" alt="Logo Institucion">
+                    
+                    <p class="desc-education">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, tenetur.</p>
+                    <p class="name-education">Nombre institucion.</p>
+                    <p class="date-education">Fecha grado</p>
+                    <p class="contact-education">
+                        <a href="">pag web</a>
+                        <a href="">Teléfono</a>
+                    </p>
+                </article>
+            </section>
+            <section class="references work">
+                <h2>Referencias Laborales</h2>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+            </section>
+            <section class="references familiars">
+                <h2>Referencias Familiares</h2>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+            </section>
+            <section class="references personal">
+                <h2>Referencias Personales</h2>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+                <article class="reference">
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                    <div class="row">
+                        <span>
+                            <h4>:</h4>
+                        </span>
+                        <span></span>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer class="row ">
+        <div class="column ">
+            <h2>footer</h2>
+        </div>
+    </footer>
+</body>
+</html>
