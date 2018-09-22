@@ -32,6 +32,7 @@
         }
         
         nav{
+            display: flex;
             background-color: gray;
         }
         
@@ -44,7 +45,7 @@
         }
         
         nav a:hover{
-            background-color: cornflowerblue;
+            background-color: rgb(51, 96, 181);
             /* color:black; */
         }
         
@@ -65,17 +66,43 @@
             padding: 20px;
         }
 
-        footer{
+        main section{
+            background-color: rgba(169, 169, 169, 0.481);
+            padding: 10px;
+            flex: 100%;
+            margin-bottom: 20px;
+        }
+        
+        main section article{
             background-color: gray;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        footer{
+            background-color: #ddd;
             padding: 20px;
             text-align: center;
         }
+
+        @media screen and (max-width: 700px){
+            .row, nav{
+                flex-direction: column;
+            }
+        }
+
+        /* @media screen and (max-width: 700px){
+            .row, nav{
+                flex-direction: column;
+            }
+        } */
 
     </style>
 </head>
 <body>
     <header class="header">
         <h1> <b>D</b>avid <b>L</b>eonardo <b>C</b>alderon <b>C</b>ristancho</h1>
+        <img class="profile-img" src="img/perfil.png" alt="img/profile.png">
         <h3><b>T</b>ecnólogo en <b>S</b>istemas</h3>
         <section>
             <a href="#1">Red social 1</a>
@@ -84,17 +111,18 @@
         </section>
     </header>
     <nav class="navbar">
-        <a href="#1">Enlace 1</a>
-        <a href="#2">Enlace 2</a>
-        <a href="#3">Enlace 3</a>
-        <a href="#4">Enlace 4</a>
-        <a href="#5">Enlace 5</a>
+        <a href="#profile">Perfil</a>
+        <a href="#experiences">Esperiencias</a>
+        <a href="#education">Educación</a>
+        <a href="#complement-education">Educación complementaria</a>
+        <a href="#work">Referencias laborales</a>
+        <a href="#familiars">Referencias familiares</a>
+        <a href="#personal">Referencias personales</a>
     </nav>
     <div class="row">
         <aside>
             <article class="about-me">
                 <h2>Acerca de mi</h2>
-                <img class="profile-img" src="img/perfil.png" alt="img/profile.png">
                 <p>
                     <h6>Info 1</h6>
                     <h6>Info 2</h6>
@@ -216,7 +244,7 @@
                     
                 </article>
             </section>
-            <section id="education">
+            <section id="education" class="education">
                 <h2>Educación</h2>
                 
                 <article class="title-education">
@@ -244,7 +272,7 @@
                 </article>
                 
             </section>
-            <section class="education complement-education">
+            <section id="complement-education" class="education ">
                 <h2>Formación Complementaria</h2>
                 <article class="title-education">
                     <h5>Nombre titulo</h5>
@@ -271,7 +299,7 @@
                     </p>
                 </article>
             </section>
-            <section class="references work">
+            <section id="work" class="references">
                 <h2>Referencias Laborales</h2>
                 <article class="reference">
                     <div class="row">
@@ -338,7 +366,7 @@
                     </div>
                 </article>
             </section>
-            <section class="references familiars">
+            <section id="familiars" class="references">
                 <h2>Referencias Familiares</h2>
                 <article class="reference">
                     <div class="row">
@@ -405,7 +433,7 @@
                     </div>
                 </article>
             </section>
-            <section class="references personal">
+            <section id="personal" class="references">
                 <h2>Referencias Personales</h2>
                 <article class="reference">
                     <div class="row">
